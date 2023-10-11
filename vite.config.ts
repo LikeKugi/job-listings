@@ -1,10 +1,11 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
+import svgr from '@svgr/rollup';
 import { fileURLToPath } from 'url';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react()],
+  plugins: [react(), svgr(),],
   resolve: {
     alias: [
       { find: '@', replacement: fileURLToPath(new URL('./src', import.meta.url)) },
@@ -13,7 +14,7 @@ export default defineConfig({
       { find: '@hooks', replacement: fileURLToPath(new URL('./src/hooks', import.meta.url)) },
       { find: '@layout', replacement: fileURLToPath(new URL('./src/components/layout', import.meta.url)) },
       { find: '@pages', replacement: fileURLToPath(new URL('./src/pages', import.meta.url)) },
-      { find: '@routing', replacement: fileURLToPath(new URL('./src/components/routing', import.meta.url)) },
+      { find: '@common', replacement: fileURLToPath(new URL('./src/components/common', import.meta.url)) },
       { find: '@routes', replacement: fileURLToPath(new URL('./src/routes', import.meta.url)) },
       { find: '@styles', replacement: fileURLToPath(new URL('./src/styles', import.meta.url)) },
       { find: '@store', replacement: fileURLToPath(new URL('./src/store', import.meta.url)) },

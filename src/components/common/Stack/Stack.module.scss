@@ -1,0 +1,14 @@
+.stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.center {
+  justify-content: center;
+}
+.start {
+  justify-content: flex-start;
+}
+.end {
+  justify-content: flex-start;
+}

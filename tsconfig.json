@@ -36,7 +36,10 @@
       "@views/*": ["./src/views/*"],
       "@utils/*": ["./src/utils/*"],
       "@layout/*": ["./src/components/layout/*"],
-      "@routing/*": ["./src/components/routing/*"]
+      "@common/*": ["./src/components/common/*"],
+
+      /* Types */
+      "types": ["vite-plugin-svgr/client"]
     }
   },
   "include": ["src"],
