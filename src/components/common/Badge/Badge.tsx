@@ -13,9 +13,9 @@ interface IBadgeProps {
   onClick?: () => void,
 }
 
-const Badge: FC<IBadgeProps> = ({ variant, colorScheme, children, onClear }): JSX.Element => {
+const Badge: FC<IBadgeProps> = ({ variant, colorScheme, children, onClick, onClear }): JSX.Element => {
   return (
-    <div className={`${styles.badge} ${styles[variant]} ${colorScheme && styles[colorScheme]}`}>
+    <div className={`${styles.badge} ${styles[variant]} ${colorScheme && styles[colorScheme]}`} onClick={onClick}>
       <span className={styles.badge__text}>
         {children}
       </span>

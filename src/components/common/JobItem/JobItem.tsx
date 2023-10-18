@@ -5,7 +5,9 @@ import Badge from '@/components/common/Badge/Badge';
 import Card from '@/components/common/Card/Card';
 import { IDataJob } from '@/types/IDataJob';
 
-interface IJobItemProps extends IDataJob{}
+interface IJobItemProps extends IDataJob {
+  badgeClickHandler: (str: string) => void,
+}
 
 const JobItem: FC<IJobItemProps> = ({
                                       new: isNew,
@@ -21,10 +23,12 @@ const JobItem: FC<IJobItemProps> = ({
                                       role,
                                       postedAt,
                                       id,
+                                      badgeClickHandler,
                                     }): JSX.Element => {
   const badges = [role, level, ...languages, ...tools];
   return (
-    <Card isFeatured={isFeatured} key={id}>
+    <Card isFeatured={isFeatured}
+          key={id}>
       <div className={styles.item}>
         <div className={styles.item__info}>
           <img
@@ -70,7 +74,9 @@ const JobItem: FC<IJobItemProps> = ({
         </div>
         <Stack pos="start">
           {badges.map(item => (
-            <Badge key={item} variant="basic">{item}</Badge>
+            <Badge key={item}
+                   variant="basic"
+                   onClick={() => badgeClickHandler(item)}>{item}</Badge>
           ))}
         </Stack>
       </div>
