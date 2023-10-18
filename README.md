@@ -67,3 +67,9 @@ I need to learn more redux / redux toolkit
 
 
 ## Acknowledgments
+
+I've just completed a front-end coding challenge from @frontendmentor! 🎉
+
+You can see my solution here: https://www.frontendmentor.io/solutions/responsive-joblist-page-using-typescript-react-redux-vite-cbJb7wriJQ
+
+Any suggestions on how I can improve are welcome!
