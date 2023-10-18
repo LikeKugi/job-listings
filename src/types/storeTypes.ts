@@ -1,8 +1,9 @@
 import { PositionConstants } from '@/store/positions/position.constants';
-import { IDataJob } from '@/types/IDataJob';
 import { FiltersConstants } from '@/store/filters/filters.constants';
 
-export interface IAction {
+export type PayloadAction<T> = T
+
+export interface IAction<T> {
   type: PositionConstants | FiltersConstants,
-  payload: string | string[] | IDataJob[] | null
+  payload: PayloadAction<T>
 }
