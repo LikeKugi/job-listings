@@ -1,10 +1,10 @@
 import { JSX } from 'react';
-import Header from '@common/Header/Header';
 import styles from './Root.module.scss';
-import Footer from '@layout/Footer/Footer';
-import Container from '@common/Container/Container';
-import FilterPanel from '@layout/FilterPanel/FilterPanel';
-import JobList from '@layout/JobList/JobList';
+import Header from '@/components/common/Header/Header';
+import Container from '@/components/common/Container/Container';
+import FilterPanel from '@/components/layout/FilterPanel/FilterPanel';
+import JobList from '@/components/layout/JobList/JobList';
+import Footer from '@/components/layout/Footer/Footer';
 
 const Root = (): JSX.Element => {
   return (

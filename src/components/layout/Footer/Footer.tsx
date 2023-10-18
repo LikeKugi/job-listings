@@ -1,6 +1,6 @@
 import { JSX } from 'react';
-import Container from '@common/Container/Container';
 import styles from './Footer.module.scss'
+import Container from '@/components/common/Container/Container';
 
 const Footer = (): JSX.Element => {
   return (

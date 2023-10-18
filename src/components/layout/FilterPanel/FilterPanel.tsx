@@ -1,8 +1,9 @@
 import { JSX } from 'react';
-import Card from '@common/Card/Card';
-import Stack from '@common/Stack/Stack';
-import Badge from '@common/Badge/Badge';
+
 import styles from './FilterPanel.module.scss';
+import Card from '@/components/common/Card/Card';
+import Stack from '@/components/common/Stack/Stack';
+import Badge from '@/components/common/Badge/Badge';
 
 const FilterPanel = (): JSX.Element => {
   return (

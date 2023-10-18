@@ -1,9 +1,12 @@
 import { JSX } from 'react';
 import styles from './JobList.module.scss';
-import data from '@assets/data.json';
-import JobItem from '@common/JobItem/JobItem';
+import JobItem from '@/components/common/JobItem/JobItem';
+import { useAppSelector } from '@/store/hooks';
+import { selectAllPositions } from '@/store/positions/position.selectors';
+import { IDataJob } from '@/types/IDataJob';
 
 const JobList = (): JSX.Element => {
+  const data = useAppSelector(selectAllPositions) as IDataJob[]
   return (
     <div className={styles.list}>
       {data.map((el: IDataJob) => (<JobItem id={el.id}

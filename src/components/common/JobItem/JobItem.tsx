@@ -1,8 +1,9 @@
 import { FC, JSX } from 'react';
-import Card from '@common/Card/Card';
-import Stack from '@common/Stack/Stack';
-import Badge from '@common/Badge/Badge';
 import styles from './JobItem.module.scss';
+import Stack from '@/components/common/Stack/Stack';
+import Badge from '@/components/common/Badge/Badge';
+import Card from '@/components/common/Card/Card';
+import { IDataJob } from '@/types/IDataJob';
 
 interface IJobItemProps extends IDataJob{}
 

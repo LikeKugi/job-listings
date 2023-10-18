@@ -1,0 +1,15 @@
+export interface IDataJob {
+  "id": number,
+  "company": string,
+  "logo": string,
+  "new": boolean,
+  "featured": boolean,
+  "position": string,
+  "role": "Frontend" | "Fullstack" | "Backend" | string,
+  "level": "Senior" | "Junior" | "Midweight" | string,
+  "postedAt": string,
+  "contract": "Full Time" | "Part Time" | "Contract" | string,
+  "location": string,
+  "languages": string[],
+  "tools": string[],
+}

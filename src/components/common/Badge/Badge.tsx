@@ -3,7 +3,7 @@ import styles from './Badge.module.scss';
 
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
-import { ReactComponent as Remove } from "@assets/images/icon-remove.svg";
+import { ReactComponent as Remove } from "@/assets/images/icon-remove.svg";
 
 interface IBadgeProps {
   variant: BadgeVariantTypes,
